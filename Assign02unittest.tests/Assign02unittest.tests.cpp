@@ -42,7 +42,7 @@ namespace Assign02unittesttests
 
 		TEST_METHOD(setLength_1_1)
 		{
-			int lngth;
+			int lngth;//length of rectangle 
 			int input = 1;
 
 			setLength(input, &lngth);
@@ -53,7 +53,7 @@ namespace Assign02unittesttests
 
 		TEST_METHOD(setLength_88_88)
 		{
-			int lngth;
+			int lngth;//length of rectangle 
 			int input = 88;
 
 			setLength(input, &lngth);
@@ -64,7 +64,7 @@ namespace Assign02unittesttests
 
 		TEST_METHOD(setLength_77_notEqual)
 		{
-			int lngth;
+			int lngth;//length of rectangle 
 			int input = 77;
 
 			setLength(input, &lngth);
@@ -75,7 +75,7 @@ namespace Assign02unittesttests
 
 		TEST_METHOD(setWidth_1_1)
 		{
-			int brdth;
+			int brdth;//breadth of rectangle
 			int input = 1;
 
 			setWidth(input, &brdth);
@@ -86,7 +86,7 @@ namespace Assign02unittesttests
 
 		TEST_METHOD(setWidth_88_88)
 		{
-			int brdth;
+			int brdth;//breadth of rectangle 
 			int input = 88;
 
 			setWidth(input, &brdth);
@@ -97,7 +97,7 @@ namespace Assign02unittesttests
 
 		TEST_METHOD(setWidth_100_notEqual)
 		{
-			int brdth;
+			int brdth;//breadth of rectangle 
 			int input = 100;
 
 			setWidth(input, &brdth);
