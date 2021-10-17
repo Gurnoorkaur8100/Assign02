@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-extern "C" int getPerimeter(int* length, int* width);
-
+extern "C" int getPerimeter(int* lngth, int* brdth);
+extern "C" int getArea(int* lngth, int* brdth);
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace Assign02unittesttests
@@ -20,6 +20,20 @@ namespace Assign02unittesttests
 			int result;
 
 			result = getPerimeter(&lngth, &brdth);
+
+			Assert::AreEqual(EXP, result);
+		}
+
+		TEST_METHOD(findingArea)
+		{
+			//this test is to find and test the area of a rectangle using two values: L*B
+			int lngth = 5;// length of rectangle 
+			int brdth = 10;// breadth of rectangle
+
+			const int EXP = 50;
+			int result;
+
+			result = getArea(&lngth, &brdth);
 
 			Assert::AreEqual(EXP, result);
 		}
